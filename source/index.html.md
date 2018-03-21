@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: Gigster Reusable Code Framework
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
@@ -8,7 +8,8 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
+  - <a href='https://gigster.com/'>Get help</a>
+  - <a href='https://gigster.com/'>Gigster.com</a>
   - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
 
 includes:
@@ -19,13 +20,135 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
 
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+This is a system of reusable code components that sit within a common framework and atop standardized deployment infrastructure. 
 
-This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
+Engines act as a layer of abstraction over open source to drive a virtuous cycle of reuse, quality, developer productivity and velocity. Via templates, engines also provide for enterprise grade pre-built solutions to commonly encountered problems. 
 
-# Authentication
+The entire system is intended for use by gigsters for building, deploying and running intelligent enterprise applications (web, mobile and machine learning applications).
+
+## Version 
+
+You should have  this specific version (what number and hyperlink) and you will need 
+
+# Overview 
+
+--> why was this framework created?
+
+
+## Quick Glossary of Terms
+GDE →  Gigster Developer Environments. A system for managing local, cloud environments and deployments. Currently used by gigsters to manage their environments and deploy their projects to AWS. 
+Key Technologies → Docker, Kubernetes, AWS. Will ultimately support Google and Azure.
+Framework → A wrapper over the underlying open source application development and machine learning frameworks used by developers to build out applications. 
+Supported frameworks → Backend: Loopback, Frontend: React, React Native Design: Gigster Design System
+Modules → Code representing atomic units of functionality. Modules allow for common pieces of functionality to be implemented quicker than starting from scratch. They can be configured via specific options and they expose methods and APIs for commonly implemented tasks. Developers take these building blocks and extend them as needed or call them from custom code. Modules can be backend, frontend or design focused. Backend modules often expose HTTP endpoints that frontend modules can consume.  Frontend modules consist of code and views that consume backend modules. They can be fully custom built by gigster but will frequently be thin or thick wrappers around open source code. Modules come with unit tests and documentation out of the box and are expected to be higher quality and better maintained than any open source dependencies they are built from. 
+Backend examples are: authentication, search, payments.
+Frontend examples are: forms, calendar
+UI examples: buttons, input fields
+Templates -- A collection of modules as well as glue code that together constitute functionality for a commonly occurring type of project. Templates are intended to be starting points for client solutions. Currently the glue code is minimal but in the future, there will be templates that are more product like and have a default baseline level of end-user utility out of the box. Templates can have frontend, backend or design modules or a combination of all of these. 
+Examples → Talent marketplace, Social network
+Currently, a template is referred to as an “Engine” when it is considered in the context of the layers below it -- as part of a coherent framework sitting on top of standard infrastructure
+CLI -- A command line interface used by developers to access and interact with the overall engine system. Developers issue commands to set up templates, add modules, generate code from configuration and to deploy to GDE. 
+
+# Get Started
+
+--> What does a person need (tools/frameworks/versions) to be able to get up and running? 
+--> How should a user get started?
+--> What are the steps needed to get up and running in less than 1 hour?
+
+## Step 1
+## Step 2
+## Step 3
+
+
+# CLI 
+
+The Command Line Interface (CLI) upports the key commands.
+
+--> What is the Command Line Interface? 
+--> What does it do? 
+--> Why should I care?
+
+
+
+--> for each section please provide: 
+--- --> What does this do? 
+--- --> How do I do this? (provide code example please) 
+--- --> When do I use this?  
+
+## init 
+init -- used to initialize a project e.g. gig init marketplace would initialize a marketplace template.
+
+```javascript
+const kittn = require('kittn');
+
+let api = kittn.authorize('meowmeowmeow');
+```
+
+## generate
+generate -- used to generate code for a project as specified in the yaml file
+
+## provision
+provision -- used to provision the required resources on GDE
+
+## deploy
+deploy -- used to deploy to GDE
+
+
+# Modules - Backend
+
+## Admin
+Backend functionality for common create, read, update, delete operations by an admin on data defined in the YAML file
+
+## Authentication
+Backend code which supports login, logout, set, change, and reset password, and email verification. It also supports OAUTH provider-based authentication options like Facebook, Google, Twitter, LDAP auth.
+
+## Fileupload
+Backend code to allow for the uploading, retrieval, and deletion of files. Currently supports local and Amazon S3 storage, but can be customized with a small amount of code to support Azure, Google Cloud, Openstack, and Rackspace storage.
+
+## Search
+Backend code that enables search on models specified in the yaml file using ElasticSearch. This code supports use cases like updating the ElasticSearch Index upon creation or deletion of entries from a model. Currently supports full text search across all fields.
+
+## Stripe payments
+Backend API for supporting Stripe payments and a Gigster coupon solution. Stripe actions supported include performing transactions, creating customers and saved cards stored at Stripe, managing cards, and setting default cards.
+
+
+# Modules - Frontend
+
+## Admin
+Frontend for an admin panel that can be auto-generated based on data specified in the yaml file
+
+## Chat
+Frontend code that connects to firebase for powering realtime messaging. It comes with an html view and requires firebase authentication to keep identities for the 
+
+## Marketplace frontend demo
+Front-end for the marketplace client-solution. Specifically, this generates a frontend for a services marketplace featuring a search page for talent and a profile detail page
+
+
+
+
+
+
+# Modules - Infastructure 
+
+General infastrucure modules 
+~10 additional infrastructure (frontend and backend) modules
+
+## Module A
+--> what is this module? what does it do? when should someone use it?
+
+## Module B
+
+
+
+
+
+
+
+
+
+
+# Authentication EXAMPLE
 
 > To authorize, use this code:
 
@@ -65,7 +188,7 @@ Kittn expects for the API key to be included in all API requests to the server i
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
-# Kittens
+# Kittens EXAMPLE
 
 ## Get All Kittens
 
