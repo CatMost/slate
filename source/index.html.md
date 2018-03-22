@@ -8,7 +8,6 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript
 
 toc_footers:
-  - <a href='https://gigster.com/'>Get help</a>
   - <a href='https://gigster.com/'>Gigster.com</a>
   - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
 
@@ -27,46 +26,81 @@ Engines act as a layer of abstraction over open source to drive a virtuous cycle
 
 The entire system is intended for use by gigsters for building, deploying and running intelligent enterprise applications (web, mobile and machine learning applications).
 
+
+--> What problems does this allow users to solve? or what does this framework capable for or should be used for? 
+--> comparison to other frameworks to give context and fast mind mapping 
+
 ## Version 
 
-You should have  this specific version (what number and hyperlink) and you will need 
+You should have  this specific version (what number and hyperlink please) and you will need 
 
 # Overview 
 
 --> why was this framework created?
 
+##Fundamentals 
+--> Jerome please add his criteria of fundamentals that he presented to the Alpha-Squad 
+--> please embed Jeromes video: [video currently stored on googledrive](https://drive.google.com/drive/folders/1L5CMH95oTBz1uCgvKbRlR1KTflSmi4J3)
+
+##Architecture  
+--> what is the overview of how this was created? maybe and architecture diagram?
+
+
+## Putting Engines on a Gig
+###What does it mean to put engines on a gig?
+Developers use a command line interface to access the engines framework
+Modules from the catalog are pulled into the project using a configuration file
+The project is deployed on GDE from the command line interface
+
 
 ## Quick Glossary of Terms
-GDE →  Gigster Developer Environments. A system for managing local, cloud environments and deployments. Currently used by gigsters to manage their environments and deploy their projects to AWS. 
-Key Technologies → Docker, Kubernetes, AWS. Will ultimately support Google and Azure.
-Framework → A wrapper over the underlying open source application development and machine learning frameworks used by developers to build out applications. 
-Supported frameworks → Backend: Loopback, Frontend: React, React Native Design: Gigster Design System
-Modules → Code representing atomic units of functionality. Modules allow for common pieces of functionality to be implemented quicker than starting from scratch. They can be configured via specific options and they expose methods and APIs for commonly implemented tasks. Developers take these building blocks and extend them as needed or call them from custom code. Modules can be backend, frontend or design focused. Backend modules often expose HTTP endpoints that frontend modules can consume.  Frontend modules consist of code and views that consume backend modules. They can be fully custom built by gigster but will frequently be thin or thick wrappers around open source code. Modules come with unit tests and documentation out of the box and are expected to be higher quality and better maintained than any open source dependencies they are built from. 
+### GDE 
+Gigster Developer Environments. A system for managing local, cloud environments and deployments. Currently used by gigsters to manage their environments and deploy their projects to AWS. 
+### Key Technologies 
+Docker, Kubernetes, AWS. Will ultimately support Google and Azure.
+### Framework
+A wrapper over the underlying open source application development and machine learning frameworks used by developers to build out applications. 
+### Supported frameworks
+Backend: Loopback, Frontend: React, React Native Design: Gigster Design System
+### Modules 
+Code representing atomic units of functionality. Modules allow for common pieces of functionality to be implemented quicker than starting from scratch. They can be configured via specific options and they expose methods and APIs for commonly implemented tasks. Developers take these building blocks and extend them as needed or call them from custom code. Modules can be backend, frontend or design focused. Backend modules often expose HTTP endpoints that frontend modules can consume.  Frontend modules consist of code and views that consume backend modules. They can be fully custom built by gigster but will frequently be thin or thick wrappers around open source code. Modules come with unit tests and documentation out of the box and are expected to be higher quality and better maintained than any open source dependencies they are built from. 
 Backend examples are: authentication, search, payments.
 Frontend examples are: forms, calendar
 UI examples: buttons, input fields
-Templates -- A collection of modules as well as glue code that together constitute functionality for a commonly occurring type of project. Templates are intended to be starting points for client solutions. Currently the glue code is minimal but in the future, there will be templates that are more product like and have a default baseline level of end-user utility out of the box. Templates can have frontend, backend or design modules or a combination of all of these. 
+### Templates
+A collection of modules as well as glue code that together constitute functionality for a commonly occurring type of project. Templates are intended to be starting points for client solutions. Currently the glue code is minimal but in the future, there will be templates that are more product like and have a default baseline level of end-user utility out of the box. Templates can have frontend, backend or design modules or a combination of all of these. 
 Examples → Talent marketplace, Social network
 Currently, a template is referred to as an “Engine” when it is considered in the context of the layers below it -- as part of a coherent framework sitting on top of standard infrastructure
-CLI -- A command line interface used by developers to access and interact with the overall engine system. Developers issue commands to set up templates, add modules, generate code from configuration and to deploy to GDE. 
+### CLI
+A command line interface used by developers to access and interact with the overall engine system. Developers issue commands to set up templates, add modules, generate code from configuration and to deploy to GDE. 
 
-# Get Started
 
---> What does a person need (tools/frameworks/versions) to be able to get up and running? 
+
+# Getting Started
+
 --> How should a user get started?
 --> What are the steps needed to get up and running in less than 1 hour?
 
+--> Overview: what will a user be doing in this section? What will they accomplish at the end?
+
+## Set up 
+--> What does a person need (tools/frameworks/versions) to be able to get up and running? 
+
 ## Step 1
+--> examples please
 ## Step 2
+--> examples please
 ## Step 3
+--> examples please
 
 
 # CLI 
 
-The Command Line Interface (CLI) upports the key commands.
+The Command Line Interface (CLI) supports the key commands.
 
 --> What is the Command Line Interface? 
 --> What does it do? 
+--> When would I use such a thing?
 --> Why should I care?
 
 
@@ -132,18 +166,64 @@ Front-end for the marketplace client-solution. Specifically, this generates a fr
 # Modules - Infastructure 
 
 General infastrucure modules 
-~10 additional infrastructure (frontend and backend) modules
+see more about these modules here at [https://github.com/liquidlabs-co/gig-catalog](https://github.com/liquidlabs-co/gig-catalog)
 
 ## Module A
 --> what is this module? what does it do? when should someone use it?
+--> example code please
 
 ## Module B
+--> any aditional modules we need to add here?
+--> example code please
+
+
+
+
+# Tutorial 
+
+See the Marketplace tutorial https://github.com/gigster-eng/gig-catalog-docs/blob/master/v2.0.0/docs/tutorial.md
+
+# Templates 
+--> what are templates and how will people utilize them?
+
+A collection of modules as well as glue code that together constitute functionality for a commonly occurring type of project. Templates are intended to be starting points for client solutions. Currently the glue code is minimal but in the future, there will be templates that are more product like and have a default baseline level of end-user utility out of the box. Templates can have frontend, backend or design modules or a combination of all of these. 
+
+Examples → Talent marketplace, Social network
+
+Currently, a template is referred to as an “Engine” when it is considered in the context of the layers below it -- as part of a coherent framework sitting on top of standard infrastructure
+
+
+## Marketplace 
+Two flavors supported -- goods and services
+Upon calling gig init marketplace, the developer is prompted to select what kind of marketplace as well as other options to customize the app
+To bootstrap each type of marketplace, the yaml files are pre-configured with the appropriate data models for each type and the above backend modules
+
+
+## More to Come
+--> are there more templates to come? 
+--> where are they coming from?
 
 
 
 
 
+# Testing 
 
+--> How should someone run tests?
+--> different types of tests? when you would want to run each type of test?
+--> example code
+
+
+
+# Getting Help 
+
+--> Where and what kind of help can someone expect to get?
+
+--> How and when should someone utilize /dev-support 
+--> how long and who will be responding 
+
+
+# Other 
 
 
 
