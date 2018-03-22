@@ -47,7 +47,7 @@ You should have  this specific version (what number and hyperlink please) and yo
 
 
 ## Putting Engines on a Gig
-###What does it mean to put engines on a gig?
+### What does it mean to put engines on a gig?
 Developers use a command line interface to access the engines framework
 Modules from the catalog are pulled into the project using a configuration file
 The project is deployed on GDE from the command line interface
@@ -84,7 +84,11 @@ A command line interface used by developers to access and interact with the over
 --> Overview: what will a user be doing in this section? What will they accomplish at the end?
 
 ## Set up 
+### Prerequisite 
 --> What does a person need (tools/frameworks/versions) to be able to get up and running? 
+
+### Update the CLI 
+
 
 ## Step 1
 --> examples please
