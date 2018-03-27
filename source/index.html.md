@@ -29,6 +29,7 @@ The entire system is intended for use by gigsters for building, deploying and ru
 
 
 --> What problems does this allow users to solve? or what does this framework capable for or should be used for? 
+
 --> comparison to other frameworks to give context and fast mind mapping 
 
 ## Version 
@@ -40,10 +41,18 @@ You should have  this specific version (what number and hyperlink please) and yo
 # Overview 
 
 --> why was this framework created?
+--> what are all the pieces involved? 
+
+
+![explaining the big picture](overview_diagram.jpg)
+
+see and improve th LucidChart of this placeholder diagram here: GDT overview diagram(https://www.lucidchart.com/invitations/accept/f92cf988-641c-48f5-bd9b-636028f78c1d) 
 
 ##Fundamentals 
 {P1}
+
 --> Jerome please add his criteria of fundamentals that he presented to the Alpha-Squad 
+
 --> please embed Jeromes video: [video currently stored on googledrive](https://drive.google.com/drive/folders/1L5CMH95oTBz1uCgvKbRlR1KTflSmi4J3)
 
 ##Architecture  
@@ -120,6 +129,9 @@ The Command Line Interface (CLI) supports the key commands.
 --- --> What does this do? 
 --- --> How do I do this? (provide code example please) 
 --- --> When do I use this?  
+
+see more info here: [github catalog](https://github.com/liquidlabs-co/gig-catalog)
+(if you do not have access please slack @sam to request access)
 
 ## init 
 init -- used to initialize a project e.g. gig init marketplace would initialize a marketplace template.
@@ -199,23 +211,11 @@ see more about these modules here at [https://github.com/liquidlabs-co/gig-catal
 
 
 # GDE
-for all and any info about the Gigster Developer Environment please see here:
-https://github.com/gigster-eng/gde-docs
+for all and any info about the Gigster Developer Environment please see here: [GDE github](https://github.com/gigster-eng/gde-docs)
 
-# Tutorial 
+# Tutorials of Templates
 {P1}
-In order to get up to speed with this framework it woud be hlepful to work through a tutorial in order to gain the foundations.
 
-##Marketplace Tutorial 
-See the Marketplace tutorial https://github.com/gigster-eng/gig-catalog-docs/blob/master/v2.0.0/docs/tutorial.md
-
-##Build a Loopback API Tutorial
-
-See the GDT - Build a Loopback API tutorial here: https://docs.google.com/document/d/1ZzFxUNN4LH9CfK8KBEas5uZx20lZVBVvzzs4kkBs8_U/edit?usp=sharing
-
-
-# Templates 
-{P1}
 --> what are templates and how will people utilize them?
 
 A collection of modules as well as glue code that together constitute functionality for a commonly occurring type of project. Templates are intended to be starting points for client solutions. Currently the glue code is minimal but in the future, there will be templates that are more product like and have a default baseline level of end-user utility out of the box. Templates can have frontend, backend or design modules or a combination of all of these. 
@@ -224,17 +224,30 @@ Examples → Talent marketplace, Social network
 
 Currently, a template is referred to as an “Engine” when it is considered in the context of the layers below it -- as part of a coherent framework sitting on top of standard infrastructure
 
+In order to get up to speed with this framework it woud be hlepful to work through a tutorial in order to gain the foundations.
 
 ## Marketplace 
 Two flavors supported -- goods and services
 Upon calling gig init marketplace, the developer is prompted to select what kind of marketplace as well as other options to customize the app
 To bootstrap each type of marketplace, the yaml files are pre-configured with the appropriate data models for each type and the above backend modules
 
+### Marketplace Tutorial 
+See the Marketplace tutorial [github tutorial](https://github.com/gigster-eng/gig-catalog-docs/blob/master/v2.0.0/docs/tutorial.md)
 
-## More to Come
---> are there more templates to come? 
---> where are they coming from?
+##Build a Loopback API Tutorial
 
+See the GDT - Build a Loopback API tutorial here
+[googledocs of tutorial](https://docs.google.com/document/d/1ZzFxUNN4LH9CfK8KBEas5uZx20lZVBVvzzs4kkBs8_U/edit?usp=sharing)
+
+
+
+## Contributing to the Catalog
+{P2}
+--> How can people add to the catalog?
+--> Why would they want to add to the catalog? What gain or social capital does that give them?
+
+Gigster offers an ever growing suite of Gigster Development Tools. seem more on adding modules to the gigster reusable code catalog here: 
+[googledoc on how to add to catalog](https://drive.google.com/drive/folders/1e7wG_cN4YE553ZNe24fzGw1BJbQxMcYy)
 
 
 
@@ -248,13 +261,6 @@ To bootstrap each type of marketplace, the yaml files are pre-configured with th
 
 
 
-# Contributing to the Catalog
-{P2}
---> How can people add to the catalog?
---> Why would they want to add to the catalog? What gain or social capital does that give them?
-
-Gigster offers an ever growing suite of Gigster Development Tools. seem more on adding modules to the gigster reusable code catalog here: 
-https://drive.google.com/drive/folders/1e7wG_cN4YE553ZNe24fzGw1BJbQxMcYy
 
 
 # Getting Help 
@@ -263,7 +269,12 @@ https://drive.google.com/drive/folders/1e7wG_cN4YE553ZNe24fzGw1BJbQxMcYy
 --> How and when should someone utilize /dev-support 
 --> how long and who will be responding 
 
+## /dev-support
+The main method for recieving support is through the `/dev-support` in slack which will have a dev member of Gigster HQ respond promptly. 
 
+In any private channel, type in `/dev-support` and a clear description of the problem you need help with. A member of gigster HQ support will respond as soon as possible. 
+
+![Slack /dev-support](slack-dev-support.jpg)
 
 
 # Authentication EXAMPLE
