@@ -8,6 +8,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript
 
 toc_footers:
+  - <a href='https://gigster.com/'>Get Support</a>
   - <a href='https://gigster.com/'>Gigster.com</a>
   - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
 
@@ -17,8 +18,8 @@ includes:
 search: true
 ---
 
-# Introduction
-
+# Introduction 
+{P0}
 
 This is a system of reusable code components that sit within a common framework and atop standardized deployment infrastructure. 
 
@@ -31,18 +32,22 @@ The entire system is intended for use by gigsters for building, deploying and ru
 --> comparison to other frameworks to give context and fast mind mapping 
 
 ## Version 
+{P2}
 
 You should have  this specific version (what number and hyperlink please) and you will need 
+--> what is the current version? date it was updated? version number 
 
 # Overview 
 
 --> why was this framework created?
 
 ##Fundamentals 
+{P1}
 --> Jerome please add his criteria of fundamentals that he presented to the Alpha-Squad 
 --> please embed Jeromes video: [video currently stored on googledrive](https://drive.google.com/drive/folders/1L5CMH95oTBz1uCgvKbRlR1KTflSmi4J3)
 
 ##Architecture  
+{P2}
 --> what is the overview of how this was created? maybe and architecture diagram?
 
 
@@ -76,7 +81,8 @@ A command line interface used by developers to access and interact with the over
 
 
 
-# Getting Started
+# Getting Started 
+{P0}
 
 --> How should a user get started?
 --> What are the steps needed to get up and running in less than 1 hour?
@@ -99,6 +105,7 @@ A command line interface used by developers to access and interact with the over
 
 
 # CLI 
+{P1}
 
 The Command Line Interface (CLI) supports the key commands.
 
@@ -133,7 +140,8 @@ provision -- used to provision the required resources on GDE
 deploy -- used to deploy to GDE
 
 
-# Modules - Backend
+# Modules - Backend 
+{P1}
 
 ## Admin
 Backend functionality for common create, read, update, delete operations by an admin on data defined in the YAML file
@@ -151,13 +159,19 @@ Backend code that enables search on models specified in the yaml file using Elas
 Backend API for supporting Stripe payments and a Gigster coupon solution. Stripe actions supported include performing transactions, creating customers and saved cards stored at Stripe, managing cards, and setting default cards.
 
 
-# Modules - Frontend
+# Modules - Frontend 
+{P1}
 
 ## Admin
 Frontend for an admin panel that can be auto-generated based on data specified in the yaml file
 
 ## Chat
 Frontend code that connects to firebase for powering realtime messaging. It comes with an html view and requires firebase authentication to keep identities for the 
+
+## Design System 
+see more about the [Booster Design Kit](https://github.com/liquidlabs-co/booster-design-kit/)
+
+Booster Design Kit (BDK) is a library of UI components, app patterns and style guides packaged in a living Sketch document. It is everything you need to improve your design process: smarter defaults, overridable components and auto-generated guides.
 
 ## Marketplace frontend demo
 Front-end for the marketplace client-solution. Specifically, this generates a frontend for a services marketplace featuring a search page for talent and a profile detail page
@@ -168,6 +182,7 @@ Front-end for the marketplace client-solution. Specifically, this generates a fr
 
 
 # Modules - Infastructure 
+{P1}
 
 General infastrucure modules 
 see more about these modules here at [https://github.com/liquidlabs-co/gig-catalog](https://github.com/liquidlabs-co/gig-catalog)
@@ -183,11 +198,24 @@ see more about these modules here at [https://github.com/liquidlabs-co/gig-catal
 
 
 
-# Tutorial 
+# GDE
+for all and any info about the Gigster Developer Environment please see here:
+https://github.com/gigster-eng/gde-docs
 
+# Tutorial 
+{P1}
+In order to get up to speed with this framework it woud be hlepful to work through a tutorial in order to gain the foundations.
+
+##Marketplace Tutorial 
 See the Marketplace tutorial https://github.com/gigster-eng/gig-catalog-docs/blob/master/v2.0.0/docs/tutorial.md
 
+##Build a Loopback API Tutorial
+
+See the GDT - Build a Loopback API tutorial here: https://docs.google.com/document/d/1ZzFxUNN4LH9CfK8KBEas5uZx20lZVBVvzzs4kkBs8_U/edit?usp=sharing
+
+
 # Templates 
+{P1}
 --> what are templates and how will people utilize them?
 
 A collection of modules as well as glue code that together constitute functionality for a commonly occurring type of project. Templates are intended to be starting points for client solutions. Currently the glue code is minimal but in the future, there will be templates that are more product like and have a default baseline level of end-user utility out of the box. Templates can have frontend, backend or design modules or a combination of all of these. 
@@ -212,6 +240,7 @@ To bootstrap each type of marketplace, the yaml files are pre-configured with th
 
 
 # Testing 
+{P2}
 
 --> How should someone run tests?
 --> different types of tests? when you would want to run each type of test?
@@ -219,15 +248,20 @@ To bootstrap each type of marketplace, the yaml files are pre-configured with th
 
 
 
+# Contributing to the Catalog
+{P2}
+--> How can people add to the catalog?
+--> Why would they want to add to the catalog? What gain or social capital does that give them?
+
+Gigster offers an ever growing suite of Gigster Development Tools. seem more on adding modules to the gigster reusable code catalog here: 
+https://drive.google.com/drive/folders/1e7wG_cN4YE553ZNe24fzGw1BJbQxMcYy
+
+
 # Getting Help 
 
 --> Where and what kind of help can someone expect to get?
-
 --> How and when should someone utilize /dev-support 
 --> how long and who will be responding 
-
-
-# Other 
 
 
 
